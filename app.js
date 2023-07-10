@@ -11,8 +11,10 @@ const app = express();
 app.use(bodyParser.urlencoded({extended: true}));
 
 // *** Static Folder ***
-app.use(express.static("public"));
+app.use(express.static("Public"));
 // app.use("/public", express.static(path.join(__dirname, "public")));
+
+// app.use("/Public", express.static(path.join(__dirname, "Public")));
 
 // *** Tracking HTML File ***
 app.get("/", function(req, res){
@@ -48,7 +50,8 @@ app.post("/", function(req, res){
 
     const options = {
         method: "POST",
-        auth: "text or name:9730e7f9fbd5558f83bc80b89e08f9dc-us21"
+        auth: "text or name:660555d106adee609c4e59c7884651bc-us21"
+
     };
 
     // *** Requesting and send back our data to mailchimp ***
