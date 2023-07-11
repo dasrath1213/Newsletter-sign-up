@@ -1,7 +1,5 @@
 body{
+    background-color: black;
 
-
-
-
-    background-color: blue;
-};
+    background-image: url('image.jpg');
+}
